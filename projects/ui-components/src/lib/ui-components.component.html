@@ -1,0 +1,119 @@
+<main class="main-section">
+    <section class="web-view">
+        <div class="image-container-section">
+            <div class="container block-1">
+                <div class="content-section">
+                    <div class="title-description">
+                        <div class="title title-1" (click)="titles[0].visibility=!titles[0].visibility">{{titles[0].title}}</div>
+                        <div class="description" *ngIf="titles[0].visibility">
+                            <p class="para" [ngClass]="{ 'white-color': titles[0].seemore }">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="see-more" *ngIf="!titles[0].seemore" (click)="titles[0].seemore=!titles[0].seemore">See more</p>
+                            <p class="para" [ngClass]="{ 'white-color': titles[0].seemore }" *ngIf="titles[0].seemore">
+                                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <div class="title-description">
+                        <div class="title title-2" (click)="titles[1].visibility=!titles[1].visibility">{{titles[1].title}}</div>
+                        <div class="description" *ngIf="titles[1].visibility">
+                            <p class="para" [ngClass]="{ 'white-color': titles[1].seemore }">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="see-more" *ngIf="!titles[1].seemore" (click)="titles[1].seemore=!titles[1].seemore">See more</p>
+                            <p class="para" [ngClass]="{ 'white-color': titles[1].seemore }" *ngIf="titles[1].seemore">
+                                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container block-2">
+                <div class="content-section">
+                    <div class="title-description">
+                        <div class="title title-3" (click)="titles[2].visibility=!titles[2].visibility">{{titles[2].title}}</div>
+                        <div class="description" *ngIf="titles[2].visibility">
+                            <p class="para" [ngClass]="{ 'white-color': titles[2].seemore }">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="see-more" *ngIf="!titles[2].seemore" (click)="titles[2].seemore=!titles[2].seemore">See more</p>
+                            <p class="para" [ngClass]="{ 'white-color': titles[2].seemore }" *ngIf="titles[2].seemore">
+                                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <div class="title-description">
+                        <div class="title title-4" (click)="titles[3].visibility=!titles[3].visibility">{{titles[3].title}}</div>
+                        <div class="description" *ngIf="titles[3].visibility">
+                            <p class="para" [ngClass]="{ 'white-color': titles[3].seemore }">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="see-more" *ngIf="!titles[3].seemore" (click)="titles[3].seemore=!titles[3].seemore">See more</p>
+                            <p class="para" [ngClass]="{ 'white-color': titles[3].seemore }" *ngIf="titles[3].seemore">
+                                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pie-image-block">
+                <img class="pie-image" src="assets/images/pie-image.png" alt="pie image 1"/>
+            </div>
+        </div>
+    </section>
+    <section class="mobile-view">
+        <div>
+            <div class="title title-1" (click)="titles[0].visibility=!titles[0].visibility">{{titles[0].title}}</div>
+            <div class="description" *ngIf="titles[0].visibility">
+                <p class="para" [ngClass]="{ 'white-color': titles[0].seemore }">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="see-more" *ngIf="!titles[0].seemore" (click)="titles[0].seemore=!titles[0].seemore">See more</p>
+                <p class="para" [ngClass]="{ 'white-color': titles[0].seemore }" *ngIf="titles[0].seemore">
+                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="title title-2" (click)="titles[1].visibility=!titles[1].visibility">{{titles[1].title}}</div>
+            <div class="description" *ngIf="titles[1].visibility">
+                <p class="para" [ngClass]="{ 'white-color': titles[1].seemore }">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="see-more" *ngIf="!titles[1].seemore" (click)="titles[1].seemore=!titles[1].seemore">See more</p>
+                <p class="para" [ngClass]="{ 'white-color': titles[1].seemore }" *ngIf="titles[1].seemore">
+                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="title title-3" (click)="titles[2].visibility=!titles[2].visibility">{{titles[2].title}}</div>
+            <div class="description" *ngIf="titles[2].visibility">
+                <p class="para" [ngClass]="{ 'white-color': titles[2].seemore }">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="see-more" *ngIf="!titles[2].seemore" (click)="titles[2].seemore=!titles[2].seemore">See more</p>
+                <p class="para" [ngClass]="{ 'white-color': titles[2].seemore }" *ngIf="titles[2].seemore">
+                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="title title-4" (click)="titles[3].visibility=!titles[3].visibility">{{titles[3].title}}</div>
+            <div class="description" *ngIf="titles[3].visibility">
+                <p class="para" [ngClass]="{ 'white-color': titles[3].seemore }">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="see-more" *ngIf="!titles[3].seemore" (click)="titles[3].seemore=!titles[3].seemore">See more</p>
+                <p class="para" [ngClass]="{ 'white-color': titles[3].seemore }" *ngIf="titles[3].seemore">
+                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
